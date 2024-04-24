@@ -15,6 +15,8 @@ export default function Home() {
 
                 <header className="bg-white shadow">
                     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                        <p className="text-xl  tracking-tight text-gray-900">Welcome!</p>
+
                         <h1 className="text-xl font-bold tracking-tight text-gray-900">Test card number: 4242 4242 4242 4242 </h1>
                         <h1 className="text-xl font-bold tracking-tight text-gray-900">Test card number with authentication: 4000 0025 0000 31552 </h1>
                         <h1 className="text-xl font-bold tracking-tight text-gray-900">Test card number with error: 4000 0000 0000 9995 </h1>
