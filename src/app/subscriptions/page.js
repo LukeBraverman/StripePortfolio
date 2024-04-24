@@ -17,7 +17,8 @@ const ProductDisplay = () => (
                 <h5>$19.99 / month</h5>
             </div>
         </div>
-        <form action="http://localhost:3000/api/subscription_checkout" method="POST">
+
+        <form action=" https://stripe-portfolio.vercel.app/api/subscription_checkout" method="POST">
             {/* Add a hidden field with the lookup_key of your Price */}
             <input type="hidden" name="lookup_key" value="bronze" />
             <button
@@ -26,11 +27,22 @@ const ProductDisplay = () => (
                 Checkout
             </button>
         </form>
+        {/*<form action="http://localhost:3000/api/subscription_checkout" method="POST">*/}
+        {/*    /!* Add a hidden field with the lookup_key of your Price *!/*/}
+        {/*    <input type="hidden" name="lookup_key" value="bronze" />*/}
+        {/*    <button*/}
+        {/*        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"*/}
+        {/*        id="checkout-and-portal-button" type="submit">*/}
+        {/*        Checkout*/}
+        {/*    </button>*/}
+        {/*</form>*/}
     </section>
 );
 
 const SuccessDisplay = ({ sessionId }) => {
-    const URL = `http://localhost:3000/api/subscription_manage?session_id=cs_test_a1nscoYY8B5xdbAkwAEQngaKMoNsIG1ls66HAoFte1StD1YrVnApeeGVOc`
+    // const URL = `http://localhost:3000/api/subscription_manage?session_id=cs_test_a1nscoYY8B5xdbAkwAEQngaKMoNsIG1ls66HAoFte1StD1YrVnApeeGVOc`
+    const URL = `https://stripe-portfolio.vercel.app/api/subscription_manage?session_id=cs_test_a1nscoYY8B5xdbAkwAEQngaKMoNsIG1ls66HAoFte1StD1YrVnApeeGVOc`
+
     return (
         <section>
             {/*<div className="product Box-root">*/}

@@ -54,8 +54,8 @@ export async function POST(req) {
             mode: 'payment',
             // success_url: `http://localhost:3000/one-time-payment?success=true`,
             // cancel_url: `http://localhost:3000/one-time-payment?canceled=true`,
-            success_url: `https://vercel.com/one-time-payment?success=true`,
-            cancel_url: `https://vercel.com/one-time-payment?canceled=true`,
+            success_url: ` https://stripe-portfolio.vercel.app/one-time-payment?success=true`,
+            cancel_url: ` https://stripe-portfolio.vercel.app/one-time-payment?canceled=true`,
 
         });
 

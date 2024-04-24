@@ -40,8 +40,8 @@ export async function POST(req) {
                 },
                 // success_url: `http://localhost:3000/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
                 // cancel_url: `http://localhost:3000/subscriptions?canceled=true`,
-                success_url: `https://vercel.com/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `https://vercel.com/subscriptions?canceled=true`,
+                success_url: `https://stripe-portfolio.vercel.app/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
+                cancel_url: `https://stripe-portfolio.vercel.app/subscriptions?canceled=true`,
 
             });
 
