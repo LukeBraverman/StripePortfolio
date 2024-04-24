@@ -11,8 +11,10 @@ export async function POST(req) {
                 currency: 'usd',
                 // optional
                 // customer: '{{CUSTOMER_ID}}',
-                success_url: 'http://localhost:3000/setup-payment?success=true&session_id={CHECKOUT_SESSION_ID}',
-                cancel_url: 'http://localhost:3000/setup-payment?canceled=true',
+                // success_url: 'http://localhost:3000/setup-payment?success=true&session_id={CHECKOUT_SESSION_ID}',
+                // cancel_url: 'http://localhost:3000/setup-payment?canceled=true',
+                success_url: 'https://stripe-portfolio.vercel.app/setup-payment?success=true&session_id={CHECKOUT_SESSION_ID}',
+                cancel_url: 'https://stripe-portfolio.vercel.app/setup-payment?canceled=true',
             });
 
 

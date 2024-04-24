@@ -38,9 +38,11 @@ export async function POST(req) {
                 subscription_data: {
                      trial_period_days: 7
                 },
+                // success_url: `http://localhost:3000/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
+                // cancel_url: `http://localhost:3000/subscriptions?canceled=true`,
+                success_url: `https://vercel.com/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
+                cancel_url: `https://vercel.com/subscriptions?canceled=true`,
 
-                success_url: `http://localhost:3000/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
-                cancel_url: `http://localhost:3000/subscriptions?canceled=true`,
             });
 
 

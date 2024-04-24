@@ -52,8 +52,10 @@ export async function POST(req) {
             ],*/
             // allow_promotion_codes:true,
             mode: 'payment',
-            success_url: `http://localhost:3000/one-time-payment?success=true`,
-            cancel_url: `http://localhost:3000/one-time-payment?canceled=true`,
+            // success_url: `http://localhost:3000/one-time-payment?success=true`,
+            // cancel_url: `http://localhost:3000/one-time-payment?canceled=true`,
+            success_url: `https://vercel.com/one-time-payment?success=true`,
+            cancel_url: `https://vercel.com/one-time-payment?canceled=true`,
 
         });
 

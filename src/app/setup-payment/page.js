@@ -15,7 +15,8 @@ export default function Home() {
 
     const triggerSetUpPayment = async (sessionId) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/setup_intent?sessionId=${sessionId}`);
+            // const response = await fetch(`http://localhost:3000/api/setup_intent?sessionId=${sessionId}`);
+            const response = await fetch(`https://stripe-portfolio.vercel.app/api/setup_intent?sessionId=${sessionId}`);
 
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -58,7 +59,10 @@ export default function Home() {
             }
             <div className="flex justify-center items-center  ">
 
-                <form action="http://localhost:3000/api/setup_intent" method="POST">
+                {/*<form action="http://localhost:3000/api/setup_intent" method="POST">*/}
+                {/*    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full" type="submit">Click to save a card!</button>*/}
+                {/*</form>*/}
+                <form action="https://stripe-portfolio.vercel.app/api/setup_intent" method="POST">
                     <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full" type="submit">Click to save a card!</button>
                 </form>
             </div>
