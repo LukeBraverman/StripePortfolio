@@ -15,7 +15,9 @@ export async function POST(req) {
             }
             const checkoutSession = await stripe.checkout.sessions.retrieve(session_id);
 
-            const returnUrl = 'http://localhost:3000/subscriptions';
+            const returnUrl = 'https://stripe-portfolio.vercel.app/subscriptions';
+            // const returnUrl = 'http://localhost:3000/subscriptions';
+
 
             const portalSession = await stripe.billingPortal.sessions.create({
                 customer: checkoutSession.customer,
