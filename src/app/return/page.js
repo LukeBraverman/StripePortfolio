@@ -20,7 +20,7 @@ const stripePromise = loadStripe(
 export default function Return() {
 
     useEffect(() => {
-        window.location.href = 'https://portfolio-9v1zckclv-lukebravermans-projects.vercel.app/';
+        window.location.href = 'https://portfolio-ah0edxd4u-lukebravermans-projects.vercel.app/';
     }, [])
 
     return (
