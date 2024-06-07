@@ -38,7 +38,8 @@ export default function Navigation()
     const [navigation, setNavigation] = useState(
         [
 
-                { name: 'Home', href: '/', current: pathname === '/' },
+                { name: 'Main Site', href: '/return', current: pathname === '/return' },
+                { name: 'Test Cards', href: '/', current: pathname === '/' },
                 { name: 'One Time Payment', href: '/one-time-payment', current: pathname === '/one-time-payment' },
             { name: 'Subscription', href: '/subscriptions', current: pathname === '/subscriptions' },
             // { name: 'Save Card and Take Payment', href: '/get-payment-information', current: pathname === '/get-payment-information' },
@@ -46,6 +47,9 @@ export default function Navigation()
                 { name: 'Save Card now, charge later', href: '/auth-then-capture', current: pathname === '/auth-then-capture' },
                 { name: 'Pricing Table', href: '/pricing-table', current: pathname === '/pricing-table' },
                 { name: 'No Code integrations', href: '/no-code', current:  pathname === '/no-code' },
+                { name: 'Stripe Tax', href: '/tax', current:  pathname === '/tax'},
+                { name: 'Currencies', href: '/currencies', current:  pathname === '/currencies'}
+
                 //
                 // { name: 'Firebase And Stripe', href: '#', current: false },
                 // { name: 'Wordpress and Stripe', href: '#', current: false },
@@ -58,14 +62,17 @@ export default function Navigation()
         setNavigation(
             [
 
-                { name: 'Home', href: '/', current: pathname === '/' },
+                { name: 'Main Site', href: '/return', current: pathname === '/return' },
+                { name: 'Test Cards', href: '/', current: pathname === '/' },
                 { name: 'One Time Payment', href: '/one-time-payment', current: pathname === '/one-time-payment' },
-                { name: 'Subscription', href: '/subscriptions', current: pathname === '/subscriptions' },
-                // { name: 'Save Card and Take Payment', href: '/get-payment-information', current: pathname === '/get-payment-information' },
+            { name: 'Subscription', href: '/subscriptions', current: pathname === '/subscriptions' },
+            // { name: 'Save Card and Take Payment', href: '/get-payment-information', current: pathname === '/get-payment-information' },
                 { name: 'Save Card', href: '/setup-payment', current: pathname === '/setup-payment' },
                 { name: 'Save Card now, charge later', href: '/auth-then-capture', current: pathname === '/auth-then-capture' },
                 { name: 'Pricing Table', href: '/pricing-table', current: pathname === '/pricing-table' },
                 { name: 'No Code integrations', href: '/no-code', current:  pathname === '/no-code' },
+                { name: 'Stripe Tax', href: '/tax', current:  pathname === '/tax'},
+                { name: 'Currencies', href: '/currencies', current:  pathname === '/currencies'}
                 //
                 // { name: 'Firebase And Stripe', href: '#', current: false },
                 // { name: 'Wordpress and Stripe', href: '#', current: false },

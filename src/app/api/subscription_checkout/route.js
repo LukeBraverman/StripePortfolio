@@ -35,9 +35,9 @@ export async function POST(req) {
                     },
                 ],
                 mode: 'subscription',
-                subscription_data: {
-                     trial_period_days: 7
-                },
+                // subscription_data: {
+                //      trial_period_days: 7
+                // },
                 // success_url: `http://localhost:3000/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
                 // cancel_url: `http://localhost:3000/subscriptions?canceled=true`,
                 success_url: `https://stripe-portfolio.vercel.app/subscriptions?success=true&session_id={CHECKOUT_SESSION_ID}`,
