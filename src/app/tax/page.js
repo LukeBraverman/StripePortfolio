@@ -35,7 +35,7 @@ export default function Home() {
 
             { showDemo &&
                 <div className="flex justify-center items-center  ">
-                    <iframe width="640" height="360" src="https://www.loom.com/embed/57d537cda91048ec98ea15db571eca81?sid=0caa0499-c26e-40ef-9052-c16f773667eb" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
+                    <iframe width="640" height="360" src="https://www.loom.com/embed/5f2adcea0b2343449c776323db2a9ff5?sid=a946e91f-b8b4-429a-bfef-9657b4331f0d" frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen></iframe>
                 </div>
             }
 
